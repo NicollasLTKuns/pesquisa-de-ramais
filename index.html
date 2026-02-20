@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramais | GERMER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="GERMER" id="logo">
+        <input id="pesquisa" class="search" type="search" placeholder="Buscar por ramal, nome, setor, status, celular ou e-mail..." />
+        <div id="filtro">
+            <img src="filtro.png" alt="">
+            <div id="opcoes-filtro">
+                <label><input type="checkbox" id="inativos">Ocultar Inativps</label>
+                <label><input type="radio" name="opcoes" id="" value="RAMAL">Ordenar: Ramal</label>
+                <label><input type="radio" name="opcoes" id="" value="NOME">Ordenar: Nome</label>
+                <label><input type="radio" name="opcoes" id="" value="SETOR">Ordenar: Setor</label>
+                <label><input type="radio" name="opcoes" id="" value="STATUS">Ordenar: Status</label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="card-tabela">
+            <table id="t">
+                <thead id="cabecalho">
+                    <tr>
+                        <th>RAMAL</th>
+                        <th>NOME</th>
+                        <th>SETOR</th>
+                        <th>STATUS</th>
+                        <th>CELULAR</th>
+                        <th>E-MAIL</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        Dica: use a busca para localizar rapidamente. Você pode abrir em qualquer navegador (arquivo .html).
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

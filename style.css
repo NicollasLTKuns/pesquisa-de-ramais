@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #f26522;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+}
+#logo {
+    height: 80px;
+    width: 220px;
+    margin-left: 12vw;
+}
+#pesquisa {
+    height: 40px;
+    width: 450px;
+    margin-left: 150px;
+}
+#filtro {
+    position: relative;
+    display: inline-block;
+}
+#opcoes-filtro {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px;
+    z-index: 1;
+}
+#filtro:hover #opcoes-filtro{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #ffffff;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th, td {
+    border-bottom: 1px solid black;
+}
+#card-tabela {
+    background-color: #f3f3f3;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 70vw;
+    height: 75vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
